@@ -1,0 +1,28 @@
+.profile_pic {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: block;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.06);
+    background-size: cover;
+    margin: 5% 5% 0 auto;
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+  }
+
+
+.profile-text {
+    max-width: 60%; /* Adjust the maximum width as needed */
+    text-align: center; /* Align text to the right */
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  body {
+    background-color: #6e4949;
+  }
