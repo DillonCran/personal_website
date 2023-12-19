@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: #2B2A4C;
+  background: linear-gradient(to right, #2B2A4C 30%, #750E21 70%);
   /* padding-top: 10px; */
 }
 
@@ -24,9 +25,11 @@ body {
 
 .profile-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-top: 20px; /* Adjust the margin as needed */
+  margin-top: 5rem; /* Adjust the margin as needed */
+  justify-content: center;
+  text-align: center;
 }
 
 .profile-pic {
@@ -35,6 +38,12 @@ body {
   border-radius: 50%;
   border: 2px solid #EA906C;
   box-shadow: 0 0 0 15px #750E21(246, 243, 243, 0.06);
+  margin-top: 20px;
+}
+
+.profile-pic-container {
+  width: 400px;
+  height: 400px;
   margin-top: 20px;
 }
 
@@ -55,6 +64,15 @@ body {
   height: 25px;
   margin-right: 5px;
   margin-bottom: 4px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #EA906C;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 
@@ -80,8 +98,27 @@ p {
   padding: 0 20px;
   box-sizing: border-box;
   z-index: 1;
-  background: linear-gradient(to right, #2B2A4C, #750E21);
+  background: linear-gradient(to right, #2B2A4C 25%, #EA906C 75%);
 }
+
+.profile-intro{
+  color: #EEE2DE;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: Michroma; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700;  } 
+  
+p { 
+  font-family: Michroma; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  line-height: 25px; 
+  } 
 
 #intro,
 #about,
