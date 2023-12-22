@@ -3,36 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <title>Dillon Cran</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- fontawesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- Bootstrap CSS link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- jQuery and Popper.js scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-    <!-- Bootstrap JS script -->
+    <!-- Bootstrap JS script (including Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- stylesheet & fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&family=Roboto+Condensed&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Michroma"
     />
+
     <link rel="stylesheet" href="mainstyles.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand custom-navbar fixed-top"
+      class="navbar navbar-expand-sm custom-navbar fixed-top"
       data-bs-theme="dark"
     >
       <div class="container-fluid justify-content-center">
-        <div class="justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav mb-2 mb-lg-0">
+        <!-- Toggler button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <div class="navbar-nav">
             <a
               class="nav-link"
               target="_blank"
@@ -42,8 +67,8 @@
                 class="navbar-logo"
                 src="D:\Projects\personal_website\images\LinkedIn_logo_initials.png.webp"
                 alt=""
-              />LinkedIn</a
-            >
+              />LinkedIn
+            </a>
             <a
               class="nav-link"
               target="_blank"
@@ -53,8 +78,8 @@
                 class="navbar-logo"
                 src="D:\Projects\personal_website\images\github.svg"
                 alt=""
-              />GitHub</a
-            >
+              />GitHub
+            </a>
             <a
               class="nav-link"
               target="_blank"
@@ -64,8 +89,8 @@
                 class="navbar-logo"
                 src="D:\Projects\personal_website\images\file.svg"
                 alt=""
-              />Resume</a
-            >
+              />Resume
+            </a>
             <a
               class="nav-link"
               target="_blank"
@@ -75,8 +100,8 @@
                 class="navbar-logo"
                 src="D:\Projects\personal_website\images\—Pngtree—hand-drawn cartoon question mark decorative_4556952.png"
                 alt=""
-              />About Me</a
-            >
+              />About Me
+            </a>
           </div>
         </div>
       </div>
@@ -87,8 +112,10 @@
     >
       <ul class="mainpage-grid">
         <li class="profile-text col-xs col-xs-6">
-          <h2 class="profile-intro">Nice to meet you, my name is Dillon.</h2>
-          <p>
+          <h2 class="profile-intro roboto-condensed-font">
+            Nice to meet you, my name is Dillon.
+          </h2>
+          <p class="roboto-condensed-font">
             Welcome to my personal page! I am a network engineer and junior
             programmer based out of Hamilton, Ontario. I am the creative type
             with a love for the technical, and I am always looking for new
@@ -119,5 +146,6 @@
     <footer class="fixed-bottom">
       <p>Have a great day!</p>
     </footer>
+    <script src="D:\Projects\personal_website\mainpage.js"></script>
   </body>
 </html>

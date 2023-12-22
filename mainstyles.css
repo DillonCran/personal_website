@@ -6,6 +6,11 @@ colours
 #EEE2DE white
 */
 
+/* fonts */
+.roboto-condensed-font{
+font-family: 'Roboto Condensed', sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -23,9 +28,6 @@ h3 {
 
 p {
   color: #ccc;
-  font-family: Michroma; 
-  font-style: normal; 
-  font-variant: normal; 
   font-weight: 400; 
   line-height: 25px; 
 } 
@@ -55,6 +57,7 @@ footer {
 }
 
 .custom-navbar {
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -65,14 +68,13 @@ footer {
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 100;
   font-display: #EEE2DE;
   background: linear-gradient(to right, #2B2A4C 25%, #EA906C 75%);
 }
 
 .mainpage-grid {
   list-style: none;
-  margin: 40px auto 20px;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -128,6 +130,37 @@ background: #88ba1c;
   
 }
 
+#nav-links {
+  display: none; 
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.custom-navbar a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.custom-navbar a.icon {
+  float: right;
+}
+
+.custom-navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
 /* When screen is in mobile */
 @media screen and (max-width: 1200px) {
   .mainpage-grid {
@@ -136,7 +169,11 @@ background: #88ba1c;
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
-    margin-top: 5rem;
+    margin-top: none;
+  }
+  #nav-links.show {
+    display: flex;
+    flex-direction: column;
   }
   .profile-text {
     max-width: 100%;
@@ -196,8 +233,8 @@ background: #88ba1c;
 }
 
 .profile-text {
-  max-width: 600px;
-  min-width: 600px;
+  max-width: 500px;
+  min-width: 350px;
   text-align: center; /* Center the text */
   font-size: 20px;
   font-weight: bold;
@@ -212,9 +249,10 @@ background: #88ba1c;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-family: Michroma; 
-  font-style: normal; 
-  font-variant: normal; 
-  font-weight: 700;
   align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  max-width: 500px;
+  min-width: 300px;
 } 
